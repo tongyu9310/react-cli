@@ -9,6 +9,9 @@ console.log('_mode', argv);
 const _mergeConfig = require(`./config/webpack.${_mode}.js`);
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 let cssLoaders = [
+  // {
+  //   loader: 'style-loader',
+  // },
   MiniCssExtractPlugin.loader,
   {
     loader: 'css-loader',
@@ -37,19 +40,19 @@ const webpackBaseConfig = {
         loader: 'babel-loader', //babeljs.cn
       },
       {
-        test: /\.(.css|scss)$/,
+        test: /\.(css|scss)$/,
         use: cssLoaders,
       },
       {
-        test: /\.(png|jpeg|gif|eot|woff|woff2|ttf|svg|otf|webp)$/,
+        test: /\.(png|jpg|jpeg|gif|eot|woff|woff2|ttf|svg|otf|webp)$/,
         type: 'asset',
       },
     ],
   },
-  external: {
-    //不进行打包
-    // react: 'react',//放到cdn
-  },
+  // external: {
+  //   //不进行打包
+  //   // react: 'react',//放到cdn
+  // },
   resolve: {
     alias: {
       '@assets': resolve('src/assets'),

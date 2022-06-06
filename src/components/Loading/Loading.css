@@ -1,0 +1,16 @@
+.loading{
+  background-color:aqua;
+  width: 90px;
+  height:90px;
+}
+.components-loading{
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  & span{
+    color:yellowgreen;
+  }
+  &.components-loading-opcity{
+    background-color:transparent;
+  }
+}

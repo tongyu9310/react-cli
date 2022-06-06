@@ -11,13 +11,13 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true, //报错回调到首页
-    contentBase: join(__dirname, '../dist'), //当前目录
-    host: '0.0.0.0', //默认
-    inline: true, //iframe
+    // contentBase: join(__dirname, '../dist'), //当前目录
+    // host: '0.0.0.0', //默认
+    // inline: true, //iframe
     port: 8082,
-    watchContentBase: true,
-    // node-notifier
-    quiet: true, //配合friendly-error-webpack-plugin
+    // watchContentBase: true,
+    // // node-notifier
+    // quiet: true, //配合friendly-error-webpack-plugin
   },
   devtool: 'source-map',
   plugins: [

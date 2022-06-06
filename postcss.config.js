@@ -1,8 +1,8 @@
 module.exports = {
   plugins: {
-    'post-css-prest-env': {
+    'postcss-preset-env': {
       stage: 0,
-      feature: {
+      features: {
         'nesting-rules': true,
       },
     },

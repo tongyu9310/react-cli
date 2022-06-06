@@ -1,0 +1,22 @@
+:root{
+  /* 字体颜色 */
+  --fColor:#ac9455;
+  --fWhite:#fff;
+  --fBlack:#000;
+  /* 字体大小 */
+  --fSize:14px;
+  --navFSize:16px;
+  --tilFSize:16px;
+/* 背景颜色 */
+  --bgColor:#131313;
+  --actBgColor:#1a1a1a;
+/* 阴影颜色 */
+--shadowBlackColor:#000;
+
+/* 边框 */
+--borderColor:#ac9455;
+--borderRadius_2:2px;
+/* 按钮 */
+--btnColor:#ac9455;
+
+}
